@@ -83,7 +83,7 @@
         {
             "numero": 6,
             "type": "Exemples",
-            "contenu": "<?php $tableau = ['clé1' => 'valeur1', 'clé2' => 'valeur2']; ?>"
+            "contenu": "<?php $tableau = ['clé1' => 'valeur1', 'clé2' => 'valeur2']; echo $tableau['clé1']; ?>"
         },
         {
             "numero": 6,
