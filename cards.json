@@ -93,12 +93,12 @@
         {
             "numero": 7,
             "type": "Connaissances",
-            "contenu": "Les fonctions PHP permettent de réutiliser du code en encapsulant des blocs de logique."
+            "contenu": "Une fonction en PHP est un bloc de code réutilisable qui exécute une tâche spécifique. Une fonction peut prendre quelques chose (paramètres) en entrée et donner quelques chose en retour."
         },
         {
             "numero": 7,
             "type": "Exemples",
-            "contenu": "<?php function saluer($nom) { return 'Bonjour ' . $nom; } ?>"
+            "contenu": "<?php function saluer($prenom) { return 'Bonjour ' . $prenom; }; echo saluer('John'); ?>"
         },
         {
             "numero": 7,
@@ -123,7 +123,7 @@
         {
             "numero": 9,
             "type": "Connaissances",
-            "contenu": "PHP peut interagir avec des bases de données via PDO ou MySQLi."
+            "contenu": "PHP peut interagir avec des bases de données via PDO ou MySQLi. Pour cela il faut une base de donnée MySQL. Par défaut MySQL communique sur le port 3306."
         },
         {
             "numero": 9,
@@ -148,12 +148,12 @@
         {
             "numero": 10,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui lit le contenu d'un fichier texte et l'affiche."
+            "contenu": "Créez un script PHP qui créer un fichier histoire.txt avec du contenu dedans."
         },
         {
             "numero": 11,
             "type": "Connaissances",
-            "contenu": "Les tableaux en PHP peuvent être utilisés pour stocker des collections de valeurs, indexées numériquement ou par des clés associatives."
+            "contenu": "Les tableaux en PHP peuvent être utilisés pour stocker des collections de valeurs, indexées numériquement."
         },
         {
             "numero": 11,
@@ -183,32 +183,32 @@
         {
             "numero": 13,
             "type": "Connaissances",
-            "contenu": "Les superglobales en PHP, comme $_GET, $_POST, et $_SESSION, permettent d'accéder à des données globales."
+            "contenu": "Les superglobales en PHP, comme $_GET, $_POST sont des variables toujours disponibles et utilisées pour récupérer des données envoyées via des formulaire."
         },
         {
             "numero": 13,
             "type": "Exemples",
-            "contenu": "<?php echo $_GET['nom']; ?>"
+            "contenu": "Ajouter à l'url de votre site ?nom=John puis ajouter le code suivant <?php echo $_GET['nom']; ?>"
         },
         {
             "numero": 13,
             "type": "Défis",
-            "contenu": "Créez un formulaire HTML qui envoie le nom d'un utilisateur via GET, et récupérez-le avec PHP."
+            "contenu": "Créez un formulaire HTML qui envoie le nom d'un utilisateur via GET, et affichez-le avec PHP."
         },
         {
             "numero": 14,
             "type": "Connaissances",
-            "contenu": "Les erreurs PHP peuvent être gérées à l'aide de fonctions comme try-catch pour gérer les exceptions."
+            "contenu": "La concatenation permet d'afficher le contenu d'une variable dans une chaîne de caractère"
         },
         {
             "numero": 14,
             "type": "Exemples",
-            "contenu": "<?php try { throw new Exception('Une erreur est survenue'); } catch (Exception $e) { echo $e->getMessage(); } ?>"
+            "contenu": "<?php $nom=John; echo Bonjour . $nom ?>"
         },
         {
             "numero": 14,
             "type": "Défis",
-            "contenu": "Écrivez un script PHP qui lance une exception et la gère à l'aide de try-catch."
+            "contenu": " Utilise la concaténation pour afficher une phrase du type : 'Je m'appelle [prenom] et j'habite à [ville].'"
         },
         {
             "numero": 15,
@@ -218,12 +218,12 @@
         {
             "numero": 15,
             "type": "Exemples",
-            "contenu": "<?php $a = 5; $b = 10; if ($a < $b) { echo 'a est plus petit que b'; } ?>"
+            "contenu": "<?php $a = 5; $b = 5; if ($a == $b) { echo 'a est égal à b'; } ?>"
         },
         {
             "numero": 15,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui compare deux variables et affiche quel est le plus grand."
+            "contenu": "Créez un script PHP qui compare deux variables et affiche un message si elles ne sont pas identiques."
         },
         {
             "numero": 16,
@@ -278,12 +278,12 @@
         {
             "numero": 19,
             "type": "Exemples",
-            "contenu": "<?php if (true && false) { echo 'Vrai'; } else { echo 'Faux'; } ?>"
+            "contenu": "    <?php $login='john'; $password='escen'; if ($login=='john' && $password=='escen') { echo 'Ok'; } else {echo 'Pas ok';} ?>"
         },
         {
             "numero": 19,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui vérifie si deux conditions sont vraies en utilisant un opérateur logique."
+            "contenu": "Créez un script PHP qui vérifie si sur deux conditions l'une d'entre elles est vraie en utilisant un opérateur logique."
         },
         {
             "numero": 20,
@@ -298,22 +298,22 @@
         {
             "numero": 20,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui vérifie si une adresse email est valide."
+            "contenu": "Créez un script PHP qui vérifie si une variable est bien un nombre (INT)."
         },
         {
             "numero": 21,
             "type": "Connaissances",
-            "contenu": "Les namespaces en PHP permettent de regrouper des classes, fonctions et constantes sous un même espace de nom pour éviter les conflits."
+            "contenu": "-"
         },
         {
             "numero": 21,
             "type": "Exemples",
-            "contenu": "<?php namespace MonNamespace; class MaClasse { public $attribut; } ?>"
+            "contenu": "-"
         },
         {
             "numero": 21,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui définit un namespace et une classe à l'intérieur de ce namespace."
+            "contenu": "-"
         },
         {
             "numero": 22,
@@ -333,7 +333,7 @@
         {
             "numero": 23,
             "type": "Connaissances",
-            "contenu": "PHP permet de gérer les cookies via la fonction setcookie(), pour stocker des données côté client."
+            "contenu": "PHP permet de gérer les cookies via la fonction setcookie(), pour stocker des données côté client. Les cookies peuvent être affiché avec la superglobale $_COOKIE. Les cookies expirent après un certain temps."
         },
         {
             "numero": 23,
@@ -348,42 +348,42 @@
         {
             "numero": 24,
             "type": "Connaissances",
-            "contenu": "Les filtres de formulaire en PHP permettent de valider et de nettoyer les données envoyées par l'utilisateur via des formulaires."
+            "contenu": "-"
         },
         {
             "numero": 24,
             "type": "Exemples",
-            "contenu": "<?php echo filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL); ?>"
+            "contenu": "-"
         },
         {
             "numero": 24,
             "type": "Défis",
-            "contenu": "Créez un formulaire PHP qui nettoie les données d'un champ email avant de les afficher."
+            "contenu": "-"
         },
         {
             "numero": 25,
             "type": "Connaissances",
-            "contenu": "PHP supporte la gestion des erreurs personnalisées via la fonction set_error_handler()."
+            "contenu": "-"
         },
         {
             "numero": 25,
             "type": "Exemples",
-            "contenu": "<?php set_error_handler(function($errno, $errstr) { echo \"Erreur: [$errno] $errstr\"; }); ?>"
+            "contenu": "-"
         },
         {
             "numero": 25,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui génère une erreur et affiche un message personnalisé via un gestionnaire d'erreur."
+            "contenu": "-"
         },
         {
             "numero": 26,
             "type": "Connaissances",
-            "contenu": "PHP offre un support pour les expressions régulières avec la fonction preg_match(), pour effectuer des recherches dans des chaînes."
+            "contenu": "PHP offre un support pour les expressions régulières avec la fonction preg_match(), pour effectuer des recherches dans des chaînes. L'expression régulière [a-zA-Z] par exemple vérifie si une chaine de caractère contient des lettres."
         },
         {
             "numero": 26,
             "type": "Exemples",
-            "contenu": "<?php echo preg_match('/\\d+/', '123abc') ? 'Match trouvé' : 'Aucun match'; ?>"
+            "contenu": "<?php echo preg_match('/[a-zA-Z]/', 'John') ? 'Match trouvé' : 'Aucun match'; ?>"
         },
         {
             "numero": 26,
@@ -393,47 +393,47 @@
         {
             "numero": 27,
             "type": "Connaissances",
-            "contenu": "PHP peut envoyer des e-mails via la fonction mail(), permettant d'envoyer des messages à des destinataires."
+            "contenu": "-"
         },
         {
             "numero": 27,
             "type": "Exemples",
-            "contenu": "<?php mail('test@example.com', 'Sujet', 'Message'); ?>"
+            "contenu": "-"
         },
         {
             "numero": 27,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui envoie un e-mail avec un objet et un message spécifiques."
+            "contenu": "-"
         },
         {
             "numero": 28,
             "type": "Connaissances",
-            "contenu": "PHP permet de créer et gérer des fichiers ZIP via la classe ZipArchive."
+            "contenu": "-"
         },
         {
             "numero": 28,
             "type": "Exemples",
-            "contenu": "<?php $zip = new ZipArchive(); $zip->open('archive.zip', ZIPARCHIVE::CREATE); $zip->addFile('file.txt'); $zip->close(); ?>"
+            "contenu": "-"
         },
         {
             "numero": 28,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui crée une archive ZIP contenant plusieurs fichiers."
+            "contenu": "-"
         },
         {
             "numero": 29,
             "type": "Connaissances",
-            "contenu": "PHP peut générer des images et des graphiques avec la bibliothèque GD."
+            "contenu": "-"
         },
         {
             "numero": 29,
             "type": "Exemples",
-            "contenu": "<?php header('Content-Type: image/png'); $image = imagecreate(100, 100); $background = imagecolorallocate($image, 255, 255, 255); imagepng($image); imagedestroy($image); ?>"
+            "contenu": "-"
         },
         {
             "numero": 29,
             "type": "Défis",
-            "contenu": "Créez un script PHP qui génère une image avec un texte dessus."
+            "contenu": "-"
         }
     ]
 }
